@@ -62,7 +62,7 @@ a .fa-hotel:hover{
     color: dodgerblue;
 }
 
-*{
+section, nav{
     font-family: 'Indie Flower', cursive;
 }
 
@@ -75,7 +75,7 @@ a .fa-hotel:hover{
     h1{
         justify-items: center;
         position: relative;
-        left: 0;
+        left: -25px;
     }
 
 }
