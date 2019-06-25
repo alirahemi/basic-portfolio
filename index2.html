@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Test
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            
+            body{
+                margin: 0;
+                padding: 0;
+                background-color: #3b3b3b;
+                
+            }
+  
+            ul{
+                overflow: hidden;
+                list-style-type: none;
+                background-color: #fff;
+                margin: 0;
+                padding: 0;
+                height: 60px;
+            }
+            
+            li{
+                float: left;
+                margin: 10px;
+            }
+            
+            li a{
+                text-decoration: none;
+                color: #3b3b3b;
+                display: block;
+                padding: 10px;
+                border: 1px solid transparent;
+            }
+            
+            li a:hover{
+                background: #f7f7f7;
+                border: 1px solid #b9b9b9;
+                border-radius: 5px;
+            }
+   
+            h1{
+                margin:5px 5px;     
+            }
+            
+            .news{
+                position: relative;
+                left: 25%;
+                width: 75%;
+                height: 300px;
+                
+            }
+            
+            .light{
+                background-color: #fff;
+                color: #4f4f4f;
+            }
+            
+            .dark{
+                background-color: #777;
+                color: #fff;
+            }
+            
+            header{
+                margin-bottom: 50px;
+            }
+            
+            .sideBar{
+                width: 25%;
+                height:200vh;
+                background-color: skyblue;
+                position:absolute;
+                top: 157.5px;
+            }
+            
+            section{
+                margin-bottom: 50px;
+            }
+            
+            h1{
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome To My Page</h1>
+            <nav class="navBar">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Download</a>
+                    </li>
+                    <li>
+                        <a href="#">about</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div class="news light">
+                <h2>News</h2>
+            </div>
+        </section>
+        
+        <section>
+            <div class="news dark">
+                <h2>Download</h2>
+            </div>
+        </section>
+        
+        <section>
+            <div class="news light">
+                <h2>About</h2>
+            </div>
+        </section>
+        
+        <aside>
+            <div class="sideBar">
+                <h2>Archive</h2>
+            </div>
+        </aside>
+    </body>
+</html>

@@ -1,129 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <title>
-            Test
-        </title>
-        <link rel="stylesheet" href="style.css">
+        <title>Menu</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            
-            body{
-                margin: 0;
-                padding: 0;
-                background-color: #3b3b3b;
-                
-            }
-  
-            ul{
-                overflow: hidden;
-                list-style-type: none;
-                background-color: #fff;
-                margin: 0;
-                padding: 0;
+
+            nav{
                 height: 60px;
+                background-color: bisque;
             }
-            
+
+            ul{
+                list-style-type: none;
+            }
             li{
                 float: left;
+                display: inline;
                 margin: 10px;
+                padding: 10px;
             }
-            
+
             li a{
                 text-decoration: none;
                 color: #3b3b3b;
-                display: block;
                 padding: 10px;
                 border: 1px solid transparent;
             }
-            
+
             li a:hover{
-                background: #f7f7f7;
-                border: 1px solid #b9b9b9;
-                border-radius: 5px;
+                border: 1px solid #3b3b3b;
+                border-radius: 3px;
             }
-   
-            h1{
-                margin:5px 5px;     
+
+            .neugikeit{
+                background-color: bisque;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 50px;
+                overflow: hidden;
+                margin: 40px 0;
+                padding: 30px;
             }
             
-            .news{
-                position: relative;
-                left: 25%;
-                width: 75%;
-                height: 300px;
+            footer{
+               
+            }
+
+            h1{
+                display: grid;
+                grid-template-columns: 1rf;
+            }
+
+            @media(max-width: 560px){
+                .neugikeit{
+                    grid-template-columns: 1fr;
+                    
+                }
+
+                h1{
+                    justify-items: center;
+                }
+
+            }
+
+            @media(max-width: 400px){
+                li{
+                  margin: 5px 1px; 
+                   
+                }
+                li a{
+                    padding: 5px;
+                }
+
                 
             }
-            
-            .light{
-                background-color: #fff;
-                color: #4f4f4f;
-            }
-            
-            .dark{
-                background-color: #777;
-                color: #fff;
-            }
-            
-            header{
-                margin-bottom: 50px;
-            }
-            
-            .sideBar{
-                width: 25%;
-                height:200vh;
-                background-color: skyblue;
-                position:absolute;
-                top: 157.5px;
-            }
-            
-            section{
-                margin-bottom: 50px;
-            }
-            
-            h1{
-                color: #fff;
-            }
+             
         </style>
     </head>
+
     <body>
         <header>
-            <h1>Welcome To My Page</h1>
-            <nav class="navBar">
+            <h1>Ali Rahemi Website</h1>
+            <nav>
                 <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Download</a>
-                    </li>
-                    <li>
-                        <a href="#">about</a>
-                    </li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Downlaod</a></li>
+                    <li><a href="#">About</a></li>
                 </ul>
             </nav>
         </header>
+
         <section>
-            <div class="news light">
-                <h2>News</h2>
+            <div class="neugikeit">
+                <div class="img">
+                    <img src="back.jpg" width="100%">
+                </div>
+                <div class="context">
+                    <h2>Grid</h2>
+                    <p class="absatz">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur ullam eaque voluptatibus nihil, neque quas nostrum, libero repudiandae saepe laudantium cupiditate vitae perspiciatis sed itaque ratione! Numquam ad sit corporis!</p>
+                </div>
             </div>
         </section>
         
         <section>
-            <div class="news dark">
-                <h2>Download</h2>
-            </div>
+                <div class="neugikeit">
+                        <div class="img">
+                            <img src="alinaderifotostudio.jpg" width="100%">
+                        </div>
+                        <div class="context">
+                            <h2>About</h2>
+                            <p class="absatz">Ali Rahemi ist mein Name. 2009 habe ich mein Bachelor-Studium Computer Software an der Universität erfolgreich abgeschlossen. Bis zum Ende 2016 war ich als Mediengestalter, Fotograf und Cutter in staatlichen Fernsehen beschäftigt. Seit 2017 wohne ich in Deutschland und arbeite als Web-Entwickler freiwilig. Außerdem zählt seit vielen Jahren die Fotografie zu meinen liebsten Freizeitbeschäftigungen. </p>
+                        </div>
+                    </div>
         </section>
-        
-        <section>
-            <div class="news light">
-                <h2>About</h2>
-            </div>
-        </section>
-        
-        <aside>
-            <div class="sideBar">
-                <h2>Archive</h2>
-            </div>
-        </aside>
+        <footer>
+                &copy Copy Right by Ali Rahemi 2019
+        </footer>
     </body>
 </html>
