@@ -39,6 +39,11 @@ li a:hover{
 
 .neuigkeit div{
     margin: 0 40px;
+    
+}
+
+.absatz{
+    text-align: justify;
 }
 
 h1{
