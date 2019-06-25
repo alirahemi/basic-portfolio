@@ -31,7 +31,7 @@ li a:hover{
     background-color: bisque;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
+    grid-gap: 20px;
     overflow: hidden;
     margin: 40px 0;
     padding: 30px;
@@ -44,8 +44,26 @@ li a:hover{
 h1{
     display: grid;
     grid-template-columns: 1rf;
-    position: relative;
-    left: 65px;
+    margin-left: 65px; 
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1rf;
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+a .fa-hotel{
+    color: #3b3b3b;
+}
+
+a .fa-hotel:hover{
+    color: dodgerblue;
+}
+
+*{
+    font-family: 'Indie Flower', cursive;
 }
 
 @media(max-width: 560px){
